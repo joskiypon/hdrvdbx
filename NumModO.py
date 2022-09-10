@@ -115,7 +115,7 @@ class NumMod(loader.Module):
                 await message.reply("заразить " + reply.raw_text[
                                                   json["entities"][i]["offset"]:json["entities"][i]["offset"] +
                                                                                 json["entities"][i]["length"]])
-            await asyncio.sleep(0)
+            await asyncio.sleep(999)
         await message.delete()
 
     async def exnumcmd(self, message):
